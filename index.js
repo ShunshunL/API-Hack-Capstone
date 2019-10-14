@@ -12,7 +12,7 @@ function displayResults(responseJson) {
   $("#results-list").empty();
   for (let i = 0; i < responseJson.hits.length; i++) {
     $("#results-list").append(
-      `<li><h3><a href="${responseJson.hits[i].recipe.url}">${responseJson.hits[i].recipe.label}</a></h3>
+      `<li><h3><a target="_blank" href="${responseJson.hits[i].recipe.url}">${responseJson.hits[i].recipe.label}</a></h3>
             <img src='${responseJson.hits[i].recipe.image}'>
             </li>`
     );
