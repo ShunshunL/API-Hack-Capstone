@@ -1,0 +1,21 @@
+.hidden {
+  display: none;
+}
+
+.container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+h1 {
+  font-size: 45px;
+}
+
+#js-search-term {
+  font-size: 120%;
+}

@@ -1,36 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Recipe Finder</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-</head>
-<body>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <div class="container">
-        <h1>Recipe finder</h1>
+      <h1>Recipe finder</h1>
 
-        <form id="js-form">
-            <label for="search-term">Search </label>
-            <input type="text" name="search-term"  placeholder="Recipes/Ingredients" id="js-search-term" required>
-            <!-- <input type="text" name="diet"  placeholder="Diet" id="js-diet">
-            <input type="text" name="meal-type"  placeholder="Meal type" id="js-meal-type">
-            <input type="text" name="calories"  placeholder="Max Calories" id="js-max-calories"> -->
+      <form id="js-form">
+        <label for="search-term">Search </label>
+        <input
+          type="text"
+          name="search-term"
+          placeholder="Recipes/Ingredients"
+          id="js-search-term"
+          required
+        />
 
- 
-            <!-- <label for="max-results">Maximum results to return</label>
-            <input type="number" name="max-results" id="js-max-results" value="10"> -->
+        <input type="submit" value="Submit" />
+      </form>
 
-            <input type="submit" value="Submit">
-        </form>
+      <div id="spinner" class="ui active loader hidden"></div>
 
-        <p id="js-error-message" class="error-message"></p>
-        <section id="results" class="hidden">
-          <h2>Search results</h2>
-          <ul id="results-list">
-          </ul>
-        </section>
+      <p id="js-error-message" class="error-message"></p>
+      <section id="results" class="hidden">
+        <h2>Search results</h2>
+        <ul id="results-list"></ul>
+      </section>
     </div>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
